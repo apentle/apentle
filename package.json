@@ -1,0 +1,29 @@
+{
+  "name": "react-native-apentle",
+  "version": "1.0.0",
+  "description": "apentle app framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "yeoman-environment": "^1.6.5",
+    "yeoman-generator": "^0.24.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apentle/react-native-apentle.git"
+  },
+  "keywords": [
+    "apentle",
+    "app",
+    "react-native"
+  ],
+  "author": "Doan Nguyen <doannd@apentle.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apentle/react-native-apentle/issues"
+  },
+  "homepage": "https://github.com/apentle/react-native-apentle#readme"
+}
