@@ -1,0 +1,50 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "apentle-plugin-example": "^0.1.0",
+    "apentle-theme-example": "^0.1.0",
+    "babel-preset-apentle": "^0.1.0",
+    "react": "15.2.1",
+    "react-native": "0.31.0",
+    "react-native-config": "^0.1.0",
+    "react-native-i18n": "^0.1.1",
+    "react-native-theme": "^0.1.4",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-actions-hub": "^0.1.2",
+    "redux-logger": "^2.6.1",
+    "redux-reducers-hub": "^0.1.1",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.3.1",
+    "eslint-plugin-react": "^6.1.2",
+    "eslint-plugin-react-native": "^2.0.0",
+    "jest-cli": "^14.1.0",
+    "react-native-babel-jest": "^0.1.1",
+    "rnpm-plugin-apentle": "^0.1.0"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/react-native-babel-jest",
+    "setupEnvScriptFile": "<rootDir>/node_modules/react-native-babel-jest/env.js",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testFileExtensions": [
+      "js"
+    ],
+    "unmockedModulePathPatterns": [
+      "react",
+      "promise",
+      "source-map"
+    ]
+  }
+}

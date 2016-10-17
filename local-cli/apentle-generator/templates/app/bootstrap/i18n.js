@@ -12,7 +12,16 @@ const I18n = require('react-native-i18n');
 I18n.fallbacks = true;
 
 if (typeof global.__ === 'undefined') {
+  // translate
   global.__ = I18n.t.bind(I18n);
+  __.translate = __;
+  __.t = __.translate;
+  // localize
+  __.localize = I18n.l.bind(I18n);
+  __.l = __.localize;
+  // pluralize
+  __.pluralize = I18n.p.bind(I18n);
+  __.p = __.pluralize;
 }
 
 /**
