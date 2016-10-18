@@ -21,7 +21,9 @@ module.exports = function init(args, config, options) {
     'react-native-apentle',
     'package.json'
   ))) {
+    console.log(chalk.green('Installing react-native-apentle'));
     execSync('npm install --save react-native-apentle');
+    console.log(chalk.green('react-native-apentle successfully installed.'));
   }
 
   // Generate Apentle code

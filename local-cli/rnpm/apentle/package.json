@@ -1,6 +1,6 @@
 {
   "name": "rnpm-plugin-apentle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "rnpm plugin that generates an apentle app project",
   "main": "index.js",
   "scripts": {
