@@ -15,7 +15,14 @@ const path = require('path');
 
 module.exports = function init(args, config, options) {
   // Install Apentle module
-  execSync('npm install --save apentle');
+  if (!fs.existsSync(path.resolve(
+    process.cwd(),
+    'node_modules',
+    'react-native-apentle',
+    'package.json'
+  ))) {
+    execSync('npm install --save react-native-apentle');
+  }
 
   // Generate Apentle code
   var name = JSON.parse(fs.readFileSync('package.json', 'utf8')).name;
@@ -27,7 +34,4 @@ module.exports = function init(args, config, options) {
     'generate-apentle.js'
   ));
   apentle(process.cwd(), name);
-
-  // Link modules
-  execSync('react-native link');
 };

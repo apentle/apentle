@@ -1,2 +1,3 @@
 # react-native-apentle
-apentle app framework
+
+Apentle helps you build react-native app quickly
